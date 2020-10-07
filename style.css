@@ -1,0 +1,98 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+
+:root{
+    --red:hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --v-d-blue:hsl(234, 12%, 34%);
+    --g-blue:hsl(229, 6%, 66%);
+    --v-l-gray:hsl(0, 0%, 98%);
+    font-size: 62.5%;
+}
+
+*,*::after,*::before{    
+    box-sizing:border-box;
+    font-size: 1.5rem;
+    margin:0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;   
+    line-height: 1.6; 
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width:83%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header{
+    padding: 5em 0;
+    text-align: center;
+    color: var(--v-d-blue);
+}
+.header__subtitle{
+    font-size: 2.4rem;
+    font-weight: 200;
+    margin-bottom: 0.5em;
+}
+.header__title{
+    font-size: 2.4rem;
+    margin-bottom: 1em;
+}
+.header__desc{
+    color:var(--g-blue);
+}
+
+
+.cards{    
+    margin-bottom: 5em;
+}
+.card{    
+    color: var(--v-d-blue);
+    margin-bottom: 1.5em;   
+    padding: 1.5em 2em 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 1em 2em -0.8em var(--g-blue);
+}
+.card .card__title{
+    font-size: 2rem;    
+}
+.card__desc{
+    font-size: 1.3rem;
+    color:var(--g-blue);
+    line-height: 2;
+    margin-bottom: 2.3em;
+}
+.card__img{
+    display: block;
+    margin-left: auto;
+    height: 4em;
+    width: 4em;
+}
+.card--top-c{
+        border-top:0.3em solid var(--cyan);
+}
+.card--top-r{
+        border-top:0.3em solid var(--red);
+}
+.card--top-o{
+        border-top:0.3em solid var(--orange);
+}
+.card--top-b{
+        border-top:0.3em solid var(--blue);
+}
+
+
+footer{
+    text-align: center;
+}
